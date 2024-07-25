@@ -1,47 +1,49 @@
 <!DOCTYPE html>
-<html lang=“en”>
+<html lang="en">
 <head>
-<meta charset=“UTF-8”>
-<title>Accessible Portfolio Problem Statement</title>
-<style>
-table {
-width: 100%;
-border-collapse: collapse;
-}
-th, td {
-border: 1px solid black;
-padding: 8px;
-text-align: left;
-}
-th {
-background-color: #f2f2f2;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-<h1>Accessible Portfolio</h1>
-<p>Create an accessible portfolio using ARIA roles to enhance accessibility for users with disabilities.</p>
-<h2>Instructions:</h2>
-<p>Bind the following ARIA roles to HTML tags:</p>
-<table>
-<tr>
-<th>Role</th>
-<th>Tag</th>
-</tr>
-<tr><td>img</td><td>img</td></tr>
-<tr><td>heading</td><td>h1</td></tr>
-<tr><td>list</td><td>ul</td></tr>
-<tr><td>listitem</td><td>li</td></tr>
-<tr><td>navigation</td><td>nav</td></tr>
-</table>
-<h2>Requirements</h2>
-<ol>
-<li>Include a heading, navigation bar, image, brief description, and a list with at least three items.</li>
-<li>All HTML tags must have the respective ARIA roles from the table.</li>
-<li>The document must have a proper title and linked CSS file.</li>
-<li>The <code>img</code> tag must include an <code>alt</code> attribute.</li>
-</ol>
-<p>For more information on ARIA roles, <a href=“https://web-accessibility.carnegiemuseums.org/foundations/aria/”>click here</a>.</p>
-</body>
+   <!-- Header Section -->
+  <header role="banner">
+    <h1>Structured Webpage Example</h1>
+  </header>
 
+  <!-- Navigation Section -->
+  <nav role="navigation">
+    <ul>
+      <li><a href="#home" role="menuitem">Home</a></li>
+      <li><a href="#about" role="menuitem">About</a></li>
+      <li><a href="#contact" role="menuitem">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Section -->
+  <main role="main">
+    <!-- Image with Description -->
+    <section>
+      <h2>Featured Image</h2>
+      <figure>
+        <img src="path_to_your_image.jpg" alt="Description of your image" role="img">
+        <figcaption>This is a brief description of the featured image.</figcaption>
+      </figure>
+    </section>
+
+    <!-- List Section -->
+    <section>
+      <h2>List Section</h2>
+      <ul role="list">
+        <li role="listitem">Item 1</li>
+        <li role="listitem">Item 2</li>
+        <li role="listitem">Item 3</li>
+      </ul>
+    </section>
+  </main>
+    
+
+
+    
+</body>
 </html>
